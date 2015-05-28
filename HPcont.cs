@@ -79,7 +79,7 @@ public class HPcont : MonoBehaviour {
             }
 
             difRotRoll = localRotation_centerEyeAnchor.z - localRotation_standard.z;
-            difPosRot = Mathf.Abs(differencePosition_from_standard.x * 50 + difRotRoll * 30);
+            difPosRot = Mathf.Abs(differencePosition_from_standard.x * 50) + Mathf.Abs(difRotRoll * 30);
 
             if (difPosRot >= threshold_staring)
             {
